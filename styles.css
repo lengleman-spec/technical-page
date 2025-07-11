@@ -6,6 +6,40 @@ html {
   height: 100%;
 }
 
+body {
+  margin: 0;
+  display: flex; /* lays out nav and body next to each other */
+  min-height: 100vh;
+}
+
+nav {
+  width: 200px; /* must have fixed width for sticky to work */
+  height: 100vh;
+  position: sticky; /* sticks to page */
+  top: 0; /* causes nav to remain in view while scrolling */
+  padding: 1rem;
+  background-color: aquamarine;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 0.8rem;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
 header {
   font-size: 28px;
   font-weight: 500;
