@@ -26,14 +26,13 @@ nav {
   position: sticky; /* sticks to page */
   top: 0; /* causes nav to remain in view while scrolling */
   padding: 2rem;
-  background-color: aquamarine;
 }
 
 nav ul {
   list-style: none;
   padding: 10px;
-  overflow: scroll;
-  border: 2px solid red;
+  height: 300px;
+  overflow-y: scroll; /* causes scroll bar to show */
 }
 
 nav li {
@@ -60,4 +59,8 @@ header {
   height: 1px;
   border-top: 3px solid #4d4e53;
   border-radius: 10px;
+}
+
+.vert-divider {
+  border-left: 3px solid #4d4e53;
 }
