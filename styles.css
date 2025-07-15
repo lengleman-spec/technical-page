@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  margin: 0;
   display: flex; /* lays out nav and body next to each other */
   min-height: 100vh;
 }
@@ -31,7 +30,7 @@ nav {
 nav ul {
   list-style: none;
   padding: 10px;
-  height: 300px;
+  height: 300px; /* must be set for scroll bar to show */
   overflow-y: scroll; /* causes scroll bar to show */
 }
 
