@@ -32,7 +32,7 @@
         <div class="divider"></div>
 
         <li>
-          <a href="">Declaring Variables</a>
+          <a href="#declaring_variables">Declaring Variables</a>
         </li>
         <div class="divider"></div>
 
@@ -156,6 +156,47 @@
           <li>Names are case sensitive</li>
           <li>No reserved words</li>
         </ul>
+      </section>
+
+      <section class="main-section" id="declaring_variables">
+        <header>Declaring variables</header>
+        <p>
+          When you declare a variable in JavaScript, you are simply creating a
+          variable and telling JavaScript that a variable exists. You create the
+          variable, but you don't give it a value. If you did, it would be
+          called <mark><em>initializing</em></mark> a variable. In summary,
+          declaration is just reserving a name in memory for a value, and
+          initialization is assigning a value to that variable.
+        </p>
+        <p>In JavaScript, you can declare a variable in one of three ways:</p>
+
+        <ul>
+          <li>var</li>
+          <li>let</li>
+          <li>const</li>
+        </ul>
+
+        <p>
+          The keyword <code>var</code> is an old, outdated way of creating
+          variables. It's not used today because it is <em>function scoped</em>,
+          meaning a variable declared with <code>var</code> is accessible
+          throughout the entire function in which it is declared, regardless of
+          block boundries.
+        </p>
+
+        <p>
+          The <code>let</code> keyword is used when you think the value of that
+          variable might change. It features a <em>block-scope</em> that can be
+          reassigned if you want.
+        </p>
+
+        <p>
+          The <code>const</code> keyword is used to declare a block-scope
+          variable, just as <code>let</code>. The difference is that
+          <code>const</code> cannot be reassigned. Once it is assigned, you
+          can't change its value. It also must be initalized when you declare
+          it. You cannot omit a value with <code>const</code>.
+        </p>
       </section>
     </main>
   </body>
