@@ -37,17 +37,7 @@
         <div class="divider"></div>
 
         <li>
-          <a href="">Variable scope</a>
-        </li>
-        <div class="divider"></div>
-
-        <li>
-          <a href="">Global Variables</a>
-        </li>
-        <div class="divider"></div>
-
-        <li>
-          <a href="">Constants</a>
+          <a href="#variable_scope">Variable scope</a>
         </li>
         <div class="divider"></div>
 
@@ -196,6 +186,37 @@
           <code>const</code> cannot be reassigned. Once it is assigned, you
           can't change its value. It also must be initalized when you declare
           it. You cannot omit a value with <code>const</code>.
+        </p>
+      </section>
+
+      <section class="main-section" id="variable_scope">
+        <header>Variable Scope</header>
+        <p>
+          At it's simplest form, <em>scope</em> is where a variable is
+          accessible in your code. There are three basic forms of scope in
+          JavaScript.
+        </p>
+
+        <ul>
+          <li>Global scope</li>
+          <li>Function scope</li>
+          <li>Block scope</li>
+        </ul>
+
+        <p>
+          Global scope variables are declared outside any function or block.
+          They're called "global" because you can access them anywhere within
+          your code.
+        </p>
+
+        <p>
+          Function scope variables are declared inside a function using
+          <code>var</code>, <code>let</code>, or <code>const</code>.
+        </p>
+
+        <p>
+          Block scope variables are declared inside curly brackets { } with
+          <code>let</code> or <code>const</code>.
         </p>
       </section>
     </main>
