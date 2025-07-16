@@ -42,7 +42,7 @@
         <div class="divider"></div>
 
         <li>
-          <a href="">Data Types</a>
+          <a href="#data_types">Data Types</a>
         </li>
         <div class="divider"></div>
 
@@ -217,6 +217,89 @@
         <p>
           Block scope variables are declared inside curly brackets { } with
           <code>let</code> or <code>const</code>.
+        </p>
+      </section>
+
+      <section class="main-section" id="data_types">
+        <header>Data Types</header>
+        <p>
+          JavaScript has two main categories of data types: primitive and
+          non-primitive. Primitive data types are simple, single values that are
+          <em>immutable</em>, meaning they cannot change their value after it's
+          been created. If you attempt to modify an immutable value, a new value
+          is created instead of altering the original. Objects are the only
+          non-primitive data type, meaning their values can change.
+        </p>
+
+        <h2>String</h2>
+        <p>
+          The string data type is a sequence of characters enclosed in quotes
+          that is used to represent text in JavaScript.
+        </p>
+        <ul>
+          <li>
+            Must be enclosed in either single or double quotes, or backticks(`).
+            Single and double quotes work identically the same, while backticks
+            are reserved for <mark>template literals</mark>
+          </li>
+          <li>
+            Must be declared using a variable, and initialized with a string
+            value (can have empty string assigned)
+          </li>
+        </ul>
+
+        <h3>Template Literals</h3>
+        <p>
+          Template literals are a modern and flexible way to work with strings.
+          Their defining feature is that they are always enclosed in
+          backticks(`), instead of double or single quotes. Template lierals
+          allow for string interpolation, which allows you to embed variables or
+          expressions directly using ${variable}. They also respect the line
+          breaks in the source code, so you can write strings that span multiple
+          lines.
+        </p>
+
+        <h2>Numbers</h2>
+        <p>
+          All JavaScript numbers are stored as decimal point numbers (aka
+          'floating point' numbers). Extremely large numbers can be written with
+          scientific (exponential) notation.
+        </p>
+
+        <h2>BigInt</h2>
+        <p>
+          All JavaScript numbers are stored in a 64-bit floating point format.
+          BigInt is a datatype that can be used to stroe integer values that are
+          too big to be represented by a normal JavaScript number.
+        </p>
+
+        <h2>Booleans</h2>
+        <p>
+          Booleans can only have one of two values: true or false. They are
+          often used in conditional testing. The number 0, an empty string ("
+          "), null, undefined, and NaN are considered falsy.
+        </p>
+
+        <h2>Undefined</h2>
+        <p>
+          A variable that's undefined is a variable without a value. This data
+          type usually signifies an unintentional absence of a value.
+        </p>
+
+        <h2>Null</h2>
+        <p>
+          Null is a primitive value that represents the intentional absence of
+          any object value. It indicates that a variable or property explicitly
+          holds no value.
+        </p>
+
+        <h2>Object</h2>
+        <p>
+          The object data type is the only non-primitive data type, meaning its
+          values can change. It is compared by reference, not by individual
+          values. By default, variables only contain one data value. Objects are
+          variables too, but they can also contain many values all assigned to
+          one object.
         </p>
       </section>
     </main>
