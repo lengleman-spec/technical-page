@@ -19,6 +19,14 @@ h1 {
   font-weight: 500;
 }
 
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
 nav {
   width: 250px; /* must have fixed width for sticky to work */
   height: 100vh;
@@ -62,4 +70,11 @@ header {
 
 .vert-divider {
   border-left: 3px solid #4d4e53;
+}
+
+code {
+  background-color: lightgray;
+  color: rgb(12, 11, 11);
+  font-size: 0.9rem;
+  border-radius: 4px;
 }
